@@ -53,6 +53,7 @@ def main():
         page.wait_for_timeout(5000)
         context.tracing.stop(path="trace.zip")
         browser.close()
+        os.system('open -a "Google Chrome" report.html')
         # In terminal, execute the following instructions:
         # playwright show-trace trace.zip
 
